@@ -1,9 +1,8 @@
 // import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 // import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-// import { UserService } from '../../services/user.service';
 // import { ActivatedRoute, Router } from '@angular/router';
-// import { Role } from '../../interfaces/user.interface';
 // import { CommonModule } from '@angular/common';
+// import { ProductService } from '../../services/product.service';
 
 // @Component({
 //   selector: 'app-user-by-id',
@@ -12,23 +11,22 @@
 // })
 // export default class UserById implements OnInit {
 //   private fb = inject(FormBuilder);
-//   private userService = inject(UserService);
+//   private productService = inject(ProductService);
 //   private router = inject(Router);
 //   private route = inject(ActivatedRoute);
 
 //   public userForm: FormGroup;
-//   public roles = Object.values(Role);
 //   public isSubmitting = false;
 //   public isLoading = true;
-//   public userId: number = 0;
+//   public productId: number = 0;
 
 //   constructor() {
 //     this.userForm = this.fb.group({
 //       id: [0],
-//       fullname: ['', [Validators.required, Validators.minLength(3)]],
-//       username: ['', [Validators.required, Validators.minLength(3)]],
-//       password: ['', [Validators.required, Validators.minLength(6)]],
-//       role: [Role.USER, [Validators.required]]
+//       nombre: ['', [Validators.required, Validators.minLength(3)]],
+//       descripcion: ['', [Validators.required, Validators.minLength(3)]],
+//       stock: ['', [Validators.required, Validators.minLength(6)]],
+//       categoria: ['', [Validators.required, Validators.minLength(6)]]
 //     });
 //   }
 

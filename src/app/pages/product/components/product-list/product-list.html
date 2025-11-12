@@ -36,16 +36,14 @@
                 <td>{{ product.descripcion }}</td>
                 <td>{{ product.stock }}</td>
                 <td>{{ product.categoria }}</td>
-                <!-- <td class="d-flex gap-2">
-                  <button class="btn btn-warning btn-sm" (click)="onEditProduct(product.id)"
-                    [disabled]="isDeleting() === user.id">
+                <td class="d-flex gap-2">
+                  <button class="btn btn-warning btn-sm">
                     Editar
                   </button>
-                  <button class="btn btn-danger btn-sm" (click)="onDeleteProduct(product.id)"
-                    [disabled]="isDeleting() === user.id">
-                    {{ isDeleting() === user.id ? 'Eliminando...' : 'Eliminar' }}
+                  <button class="btn btn-danger btn-sm">
+                    Eliminar
                   </button>
-                </td> -->
+                </td>
               </tr>
               } @empty {
               <tr>
