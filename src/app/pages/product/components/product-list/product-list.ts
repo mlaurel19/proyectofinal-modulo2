@@ -3,11 +3,11 @@ import { Router, RouterModule } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Product } from '../../interfaces/product.interface';
 import { ProductService } from '../../services/product.service';
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-product-list',
-  imports: [AsyncPipe, RouterModule],
+  imports: [AsyncPipe, RouterModule, CommonModule],
   templateUrl: './product-list.html',
 
 })
