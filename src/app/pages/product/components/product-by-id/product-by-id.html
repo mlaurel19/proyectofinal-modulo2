@@ -1,4 +1,4 @@
-<!-- <div class="row text-center my-4">
+<div class="row text-center my-4">
   <h1>Crear Producto</h1>
 </div>
 
@@ -20,7 +20,7 @@
 
             <div class="mb-3">
               <label for="descripcion" class="form-label">Descripcion Producto</label>
-              <input type="text" class="form-control" [class.is-invalid]="isFieldInvalid('descripcion')"
+              <input type="textarea" class="form-control" [class.is-invalid]="isFieldInvalid('descripcion')"
                 id="descripcion" formControlName="descripcion" placeholder="Ingrese el descripcion">
               <div class="invalid-feedback" *ngIf="isFieldInvalid('descripcion')">
                 {{ getErrorMessage('descripcion') }}
@@ -29,8 +29,8 @@
 
             <div class="mb-3">
               <label for="stock" class="form-label">Stock</label>
-              <input type="stock" class="form-control" [class.is-invalid]="isFieldInvalid('stock')" id="stock"
-                formControlName="stock" placeholder="Ingrese la contraseña">
+              <input type="number" class="form-control" [class.is-invalid]="isFieldInvalid('stock')" id="stock"
+                formControlName="stock" placeholder="Ingrese el stock">
               <div class="invalid-feedback" *ngIf="isFieldInvalid('stock')">
                 {{ getErrorMessage('stock') }}
               </div>
@@ -38,8 +38,8 @@
 
             <div class="mb-3">
               <label for="categoria" class="form-label">Categoria</label>
-              <input type="categoria" class="form-control" [class.is-invalid]="isFieldInvalid('categoria')"
-                id="categoria" formControlName="categoria" placeholder="Ingrese la contraseña">
+              <input type="text" class="form-control" [class.is-invalid]="isFieldInvalid('categoria')" id="categoria"
+                formControlName="categoria" placeholder="Ingrese la categoria">
               <div class="invalid-feedback" *ngIf="isFieldInvalid('categoria')">
                 {{ getErrorMessage('categoria') }}
               </div>
@@ -59,4 +59,4 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>

@@ -26,6 +26,7 @@ export class ProductService {
 
   updateProduct(id: number, product: Product): Observable<Product> {
     return this.httprequest.put<Product>(`${this.url}/${id}`, product);
+
   }
 
   deleteProduct(id: number): Observable<void> {

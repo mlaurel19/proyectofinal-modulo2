@@ -9,10 +9,10 @@ export const productRoutes: Routes = [
     path: 'create-product',
     loadComponent: () => import('./components/product-create/product-create')
   },
-  // {
-  //   path: ':id',
-  //   loadComponent: () => import('./components/product-by-id/product-by-id')
-  // },
+  {
+    path: ':id',
+    loadComponent: () => import('./components/product-by-id/product-by-id')
+  },
   {
     path: '**',
     redirectTo: ''
